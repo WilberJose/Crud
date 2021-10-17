@@ -29,206 +29,149 @@ namespace CRUD
         /// </summary>
         private void InitializeComponent()
         {
-            this.textBox1 = new System.Windows.Forms.TextBox();
-            this.textBox2 = new System.Windows.Forms.TextBox();
-            this.textBox3 = new System.Windows.Forms.TextBox();
-            this.textBox4 = new System.Windows.Forms.TextBox();
-            this.metroTextBox1 = new MetroFramework.Controls.MetroTextBox();
-            this.metroTextBox2 = new MetroFramework.Controls.MetroTextBox();
-            this.metroTextBox3 = new MetroFramework.Controls.MetroTextBox();
-            this.metroDateTime1 = new MetroFramework.Controls.MetroDateTime();
-            this.metroButton1 = new MetroFramework.Controls.MetroButton();
-            this.metroButton2 = new MetroFramework.Controls.MetroButton();
+            this.dtgRegistro = new System.Windows.Forms.DataGridView();
+            this.label1 = new System.Windows.Forms.Label();
+            this.lblcantidad = new System.Windows.Forms.Label();
+            this.lblprecio = new System.Windows.Forms.Label();
+            this.txtcantidad = new System.Windows.Forms.TextBox();
+            this.txtprecio = new System.Windows.Forms.TextBox();
+            this.btnguardar = new System.Windows.Forms.Button();
+            this.btnactualizar = new System.Windows.Forms.Button();
+            this.btneliminar = new System.Windows.Forms.Button();
+            this.grpdatos = new System.Windows.Forms.GroupBox();
+            ((System.ComponentModel.ISupportInitialize)(this.dtgRegistro)).BeginInit();
+            this.grpdatos.SuspendLayout();
             this.SuspendLayout();
             // 
-            // textBox1
+            // dtgRegistro
             // 
-            this.textBox1.Font = new System.Drawing.Font("Microsoft Sans Serif", 16.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox1.Location = new System.Drawing.Point(12, 30);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(149, 38);
-            this.textBox1.TabIndex = 0;
-            this.textBox1.Text = "CompraId";
-            this.textBox1.TextChanged += new System.EventHandler(this.textBox1_TextChanged);
+            this.dtgRegistro.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dtgRegistro.Location = new System.Drawing.Point(721, 7);
+            this.dtgRegistro.Name = "dtgRegistro";
+            this.dtgRegistro.RowHeadersWidth = 51;
+            this.dtgRegistro.RowTemplate.Height = 24;
+            this.dtgRegistro.Size = new System.Drawing.Size(519, 618);
+            this.dtgRegistro.TabIndex = 0;
+            this.dtgRegistro.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dtgRegistro_CellContentClick);
             // 
-            // textBox2
+            // label1
             // 
-            this.textBox2.Font = new System.Drawing.Font("Microsoft Sans Serif", 16.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox2.Location = new System.Drawing.Point(12, 125);
-            this.textBox2.Name = "textBox2";
-            this.textBox2.Size = new System.Drawing.Size(99, 38);
-            this.textBox2.TabIndex = 1;
-            this.textBox2.Text = "Precio";
-            this.textBox2.TextChanged += new System.EventHandler(this.textBox2_TextChanged);
+            this.label1.AutoSize = true;
+            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 16.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.Location = new System.Drawing.Point(7, 13);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(115, 32);
+            this.label1.TabIndex = 1;
+            this.label1.Text = "Compra";
             // 
-            // textBox3
+            // lblcantidad
             // 
-            this.textBox3.Font = new System.Drawing.Font("Microsoft Sans Serif", 16.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox3.Location = new System.Drawing.Point(12, 249);
-            this.textBox3.Name = "textBox3";
-            this.textBox3.Size = new System.Drawing.Size(122, 38);
-            this.textBox3.TabIndex = 2;
-            this.textBox3.Text = "Cantidad ";
+            this.lblcantidad.AutoSize = true;
+            this.lblcantidad.Font = new System.Drawing.Font("Microsoft Sans Serif", 16.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblcantidad.Location = new System.Drawing.Point(7, 183);
+            this.lblcantidad.Name = "lblcantidad";
+            this.lblcantidad.Size = new System.Drawing.Size(130, 32);
+            this.lblcantidad.TabIndex = 2;
+            this.lblcantidad.Text = "Cantidad";
             // 
-            // textBox4
+            // lblprecio
             // 
-            this.textBox4.Font = new System.Drawing.Font("Microsoft Sans Serif", 16.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox4.Location = new System.Drawing.Point(12, 399);
-            this.textBox4.Name = "textBox4";
-            this.textBox4.Size = new System.Drawing.Size(181, 38);
-            this.textBox4.TabIndex = 3;
-            this.textBox4.Text = "FechaCompra";
+            this.lblprecio.AutoSize = true;
+            this.lblprecio.Font = new System.Drawing.Font("Microsoft Sans Serif", 16.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblprecio.Location = new System.Drawing.Point(7, 400);
+            this.lblprecio.Name = "lblprecio";
+            this.lblprecio.Size = new System.Drawing.Size(96, 32);
+            this.lblprecio.TabIndex = 3;
+            this.lblprecio.Text = "Precio";
             // 
-            // metroTextBox1
+            // txtcantidad
             // 
+            this.txtcantidad.Location = new System.Drawing.Point(143, 193);
+            this.txtcantidad.Name = "txtcantidad";
+            this.txtcantidad.Size = new System.Drawing.Size(270, 22);
+            this.txtcantidad.TabIndex = 4;
             // 
+            // txtprecio
             // 
+            this.txtprecio.Location = new System.Drawing.Point(109, 410);
+            this.txtprecio.Name = "txtprecio";
+            this.txtprecio.Size = new System.Drawing.Size(270, 22);
+            this.txtprecio.TabIndex = 5;
             // 
-            this.metroTextBox1.CustomButton.Image = null;
-            this.metroTextBox1.CustomButton.Location = new System.Drawing.Point(198, 1);
-            this.metroTextBox1.CustomButton.Name = "";
-            this.metroTextBox1.CustomButton.Size = new System.Drawing.Size(47, 47);
-            this.metroTextBox1.CustomButton.Style = MetroFramework.MetroColorStyle.Blue;
-            this.metroTextBox1.CustomButton.TabIndex = 1;
-            this.metroTextBox1.CustomButton.Theme = MetroFramework.MetroThemeStyle.Light;
-            this.metroTextBox1.CustomButton.UseSelectable = true;
-            this.metroTextBox1.CustomButton.Visible = false;
-            this.metroTextBox1.Lines = new string[0];
-            this.metroTextBox1.Location = new System.Drawing.Point(209, 30);
-            this.metroTextBox1.MaxLength = 32767;
-            this.metroTextBox1.Name = "metroTextBox1";
-            this.metroTextBox1.PasswordChar = '\0';
-            this.metroTextBox1.ScrollBars = System.Windows.Forms.ScrollBars.None;
-            this.metroTextBox1.SelectedText = "";
-            this.metroTextBox1.SelectionLength = 0;
-            this.metroTextBox1.SelectionStart = 0;
-            this.metroTextBox1.ShortcutsEnabled = true;
-            this.metroTextBox1.Size = new System.Drawing.Size(246, 49);
-            this.metroTextBox1.TabIndex = 4;
-            this.metroTextBox1.UseSelectable = true;
-            this.metroTextBox1.WaterMarkColor = System.Drawing.Color.FromArgb(((int)(((byte)(109)))), ((int)(((byte)(109)))), ((int)(((byte)(109)))));
-            this.metroTextBox1.WaterMarkFont = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Pixel);
+            // btnguardar
             // 
-            // metroTextBox2
+            this.btnguardar.Location = new System.Drawing.Point(23, 503);
+            this.btnguardar.Name = "btnguardar";
+            this.btnguardar.Size = new System.Drawing.Size(104, 64);
+            this.btnguardar.TabIndex = 6;
+            this.btnguardar.Text = "Guardar";
+            this.btnguardar.UseVisualStyleBackColor = true;
+            this.btnguardar.Click += new System.EventHandler(this.btnguardar_Click);
             // 
+            // btnactualizar
             // 
+            this.btnactualizar.Location = new System.Drawing.Point(212, 503);
+            this.btnactualizar.Name = "btnactualizar";
+            this.btnactualizar.Size = new System.Drawing.Size(104, 64);
+            this.btnactualizar.TabIndex = 7;
+            this.btnactualizar.Text = "Actualizar";
+            this.btnactualizar.UseVisualStyleBackColor = true;
+            this.btnactualizar.Click += new System.EventHandler(this.btnactualizar_Click);
             // 
+            // btneliminar
             // 
-            this.metroTextBox2.CustomButton.Image = null;
-            this.metroTextBox2.CustomButton.Location = new System.Drawing.Point(198, 1);
-            this.metroTextBox2.CustomButton.Name = "";
-            this.metroTextBox2.CustomButton.Size = new System.Drawing.Size(47, 47);
-            this.metroTextBox2.CustomButton.Style = MetroFramework.MetroColorStyle.Blue;
-            this.metroTextBox2.CustomButton.TabIndex = 1;
-            this.metroTextBox2.CustomButton.Theme = MetroFramework.MetroThemeStyle.Light;
-            this.metroTextBox2.CustomButton.UseSelectable = true;
-            this.metroTextBox2.CustomButton.Visible = false;
-            this.metroTextBox2.Lines = new string[0];
-            this.metroTextBox2.Location = new System.Drawing.Point(209, 125);
-            this.metroTextBox2.MaxLength = 32767;
-            this.metroTextBox2.Name = "metroTextBox2";
-            this.metroTextBox2.PasswordChar = '\0';
-            this.metroTextBox2.ScrollBars = System.Windows.Forms.ScrollBars.None;
-            this.metroTextBox2.SelectedText = "";
-            this.metroTextBox2.SelectionLength = 0;
-            this.metroTextBox2.SelectionStart = 0;
-            this.metroTextBox2.ShortcutsEnabled = true;
-            this.metroTextBox2.Size = new System.Drawing.Size(246, 49);
-            this.metroTextBox2.TabIndex = 5;
-            this.metroTextBox2.UseSelectable = true;
-            this.metroTextBox2.WaterMarkColor = System.Drawing.Color.FromArgb(((int)(((byte)(109)))), ((int)(((byte)(109)))), ((int)(((byte)(109)))));
-            this.metroTextBox2.WaterMarkFont = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Pixel);
+            this.btneliminar.Location = new System.Drawing.Point(419, 503);
+            this.btneliminar.Name = "btneliminar";
+            this.btneliminar.Size = new System.Drawing.Size(104, 64);
+            this.btneliminar.TabIndex = 8;
+            this.btneliminar.Text = "Eliminar";
+            this.btneliminar.UseVisualStyleBackColor = true;
+            this.btneliminar.Click += new System.EventHandler(this.btneliminar_Click);
             // 
-            // metroTextBox3
+            // grpdatos
             // 
-            // 
-            // 
-            // 
-            this.metroTextBox3.CustomButton.Image = null;
-            this.metroTextBox3.CustomButton.Location = new System.Drawing.Point(198, 1);
-            this.metroTextBox3.CustomButton.Name = "";
-            this.metroTextBox3.CustomButton.Size = new System.Drawing.Size(47, 47);
-            this.metroTextBox3.CustomButton.Style = MetroFramework.MetroColorStyle.Blue;
-            this.metroTextBox3.CustomButton.TabIndex = 1;
-            this.metroTextBox3.CustomButton.Theme = MetroFramework.MetroThemeStyle.Light;
-            this.metroTextBox3.CustomButton.UseSelectable = true;
-            this.metroTextBox3.CustomButton.Visible = false;
-            this.metroTextBox3.Lines = new string[0];
-            this.metroTextBox3.Location = new System.Drawing.Point(209, 249);
-            this.metroTextBox3.MaxLength = 32767;
-            this.metroTextBox3.Name = "metroTextBox3";
-            this.metroTextBox3.PasswordChar = '\0';
-            this.metroTextBox3.ScrollBars = System.Windows.Forms.ScrollBars.None;
-            this.metroTextBox3.SelectedText = "";
-            this.metroTextBox3.SelectionLength = 0;
-            this.metroTextBox3.SelectionStart = 0;
-            this.metroTextBox3.ShortcutsEnabled = true;
-            this.metroTextBox3.Size = new System.Drawing.Size(246, 49);
-            this.metroTextBox3.TabIndex = 6;
-            this.metroTextBox3.UseSelectable = true;
-            this.metroTextBox3.WaterMarkColor = System.Drawing.Color.FromArgb(((int)(((byte)(109)))), ((int)(((byte)(109)))), ((int)(((byte)(109)))));
-            this.metroTextBox3.WaterMarkFont = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Pixel);
-            // 
-            // metroDateTime1
-            // 
-            this.metroDateTime1.Location = new System.Drawing.Point(235, 406);
-            this.metroDateTime1.MinimumSize = new System.Drawing.Size(0, 30);
-            this.metroDateTime1.Name = "metroDateTime1";
-            this.metroDateTime1.Size = new System.Drawing.Size(200, 30);
-            this.metroDateTime1.TabIndex = 7;
-            // 
-            // metroButton1
-            // 
-            this.metroButton1.Location = new System.Drawing.Point(498, 399);
-            this.metroButton1.Name = "metroButton1";
-            this.metroButton1.Size = new System.Drawing.Size(129, 60);
-            this.metroButton1.TabIndex = 8;
-            this.metroButton1.Text = "Guardar";
-            this.metroButton1.UseSelectable = true;
-            // 
-            // metroButton2
-            // 
-            this.metroButton2.Location = new System.Drawing.Point(694, 399);
-            this.metroButton2.Name = "metroButton2";
-            this.metroButton2.Size = new System.Drawing.Size(129, 60);
-            this.metroButton2.TabIndex = 9;
-            this.metroButton2.Text = "Cerrar";
-            this.metroButton2.UseSelectable = true;
+            this.grpdatos.Controls.Add(this.txtprecio);
+            this.grpdatos.Controls.Add(this.txtcantidad);
+            this.grpdatos.Controls.Add(this.lblprecio);
+            this.grpdatos.Controls.Add(this.lblcantidad);
+            this.grpdatos.Controls.Add(this.label1);
+            this.grpdatos.Location = new System.Drawing.Point(5, 6);
+            this.grpdatos.Name = "grpdatos";
+            this.grpdatos.Size = new System.Drawing.Size(576, 446);
+            this.grpdatos.TabIndex = 9;
+            this.grpdatos.TabStop = false;
             // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(868, 477);
-            this.Controls.Add(this.metroButton2);
-            this.Controls.Add(this.metroButton1);
-            this.Controls.Add(this.metroDateTime1);
-            this.Controls.Add(this.metroTextBox3);
-            this.Controls.Add(this.metroTextBox2);
-            this.Controls.Add(this.metroTextBox1);
-            this.Controls.Add(this.textBox4);
-            this.Controls.Add(this.textBox3);
-            this.Controls.Add(this.textBox2);
-            this.Controls.Add(this.textBox1);
+            this.ClientSize = new System.Drawing.Size(1242, 634);
+            this.Controls.Add(this.grpdatos);
+            this.Controls.Add(this.btneliminar);
+            this.Controls.Add(this.btnactualizar);
+            this.Controls.Add(this.btnguardar);
+            this.Controls.Add(this.dtgRegistro);
             this.Name = "Form1";
             this.Text = "Form1";
+            ((System.ComponentModel.ISupportInitialize)(this.dtgRegistro)).EndInit();
+            this.grpdatos.ResumeLayout(false);
+            this.grpdatos.PerformLayout();
             this.ResumeLayout(false);
-            this.PerformLayout();
 
         }
 
         #endregion
 
-        private System.Windows.Forms.TextBox textBox1;
-        private System.Windows.Forms.TextBox textBox2;
-        private System.Windows.Forms.TextBox textBox3;
-        private System.Windows.Forms.TextBox textBox4;
-        private MetroFramework.Controls.MetroTextBox metroTextBox1;
-        private MetroFramework.Controls.MetroTextBox metroTextBox2;
-        private MetroFramework.Controls.MetroTextBox metroTextBox3;
-        private MetroFramework.Controls.MetroDateTime metroDateTime1;
-        private MetroFramework.Controls.MetroButton metroButton1;
-        private MetroFramework.Controls.MetroButton metroButton2;
+        private System.Windows.Forms.DataGridView dtgRegistro;
+        private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.Label lblcantidad;
+        private System.Windows.Forms.Label lblprecio;
+        private System.Windows.Forms.TextBox txtcantidad;
+        private System.Windows.Forms.TextBox txtprecio;
+        private System.Windows.Forms.Button btnguardar;
+        private System.Windows.Forms.Button btnactualizar;
+        private System.Windows.Forms.Button btneliminar;
+        private System.Windows.Forms.GroupBox grpdatos;
     }
 }
 
